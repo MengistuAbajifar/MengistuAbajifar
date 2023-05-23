@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    text-align: center;
+    position: relative;
+    color: whitesmoke;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    margin: 8px;
+    transition: all 150ms ease-in;
+}
+
+.option-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.option-btn {
+    padding-block: 0.5px;
+}
+
+.on-line-1 {
+    transition: all 150ms ease-in;
+    transform: rotate(45deg) translate(7.5px, 7.5px);
+    ;
+}
+
+.on-line-3 {
+    transition: all 150ms ease-in;
+    transform: rotate(-45deg) translate(7.5px, -7.5px);
+}
+
+.on-line-2 {
+    opacity: 0;
+    transition: all 150ms ease-in;
+}
+
+.option-btn:hover {
+    cursor: pointer;
+}
+
+.nums {
+    color: white;
+    font-size: 12rem;
+}
+
+.btn {
+    background-color: black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 2px whitesmoke;
+    color: whitesmoke;
+    font-size: 1.7rem;
+    padding: 20px 65px;
+    margin-inline: 30px;
+    transition: all 150ms ease-in;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition: all 150ms ease-in;
+    cursor: pointer;
+}
+.dark-bg {
+    position: absolute;
+    width: 70%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.57);
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 250ms ease-in-out;
+}
+.dark-bg-on { 
+    opacity: 1;
+    visibility:visible;
+    transition: all 250ms ease-in-out;
+}
+.menu {
+    position: absolute;
+    height: 120%;
+    width: 30%;
+    background-color: black;
+    box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.39);
+    -webkit-box-shadow: 7px 0px 19px -1px rgba(255, 255, 255, 0.39);
+    -moz-box-shadow: 7px 0px 19px -1px rgba(255, 255, 255, 0.39);
+    transform: translate(-105%);
+    top: -12px;
+    transition: all 250ms ease-in-out;
+    padding-top: 100px;
+
+}
+
+.menu div {
+        /* border: solid whitesmoke 1px; */
+    height: 100px;
+}
+
+.level-container,
+.score-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-open {
+    transition: all 250ms ease-in-out;
+    transform: translateX(0%);
+}
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: start;
+    margin-left: 30px;
+}
+.level-info{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 2fr;
+    margin-right: 30px;
+}
+
+.btn-2 {
+    background-color: black;    
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 2px whitesmoke;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-inline: 10px;
+    border-radius: 0;
+    transition: all 150ms ease-in;
+}
