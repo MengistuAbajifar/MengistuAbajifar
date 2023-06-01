@@ -20,7 +20,7 @@ body {
 .landing-page-container {
     width: 100%;
     height: 100%;
-    background-image: url(/assets/bg-circle.png);
+    background-image: url(https://mengistuabajifar.github.io/home/FrontEnd/assets/bg-circle.png);
     background-position: 50%;
     position: relative;
     background-size: cover;
