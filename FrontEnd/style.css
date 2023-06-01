@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    height: 100vh;
+}
+.nav-bar-container {
+    height: 42px;
+    background-color: rgb(28,38,32);
+    box-shadow: 0 1px 2px 0 rgba(rgb(28,38,32),.7);
+}
+.container {
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 10px;
+}
+.landing-page-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/bg-circle.png);
+    background-position: 50%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.roulette {
+    position: relative;
+}
+.logo img {
+    width: 250px;
+}
+.roulette-img {
+    width: 300px;
+    animation: landing-rotate linear 5s infinite;
+}
+.pointer{
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 15px);
+    z-index: 2;
+}
+.pointer-img {
+    width: 30px;
+    rotate: 180deg;
+}
+.coin-container {
+    position: absolute;
+    top: 7%;
+    left: calc(50% - 400px);
+}
+.coin-container img {
+    width: 800px;
+}
+.bg-layer-container img{
+    width: 100%;
+    position: fixed;
+    bottom: -130px;
+}
+.bg-img-circle {
+    object-fit: fill;
+}
+.footer {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    z-index: 200;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    background-color: rgb(28,38,32);
+}
+.footer img {
+    width: 100px;
+}
+@keyframes landing-rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+  }
